@@ -4,4 +4,5 @@
   <h2>  <%= link_to restaurant.name, restaurant_path(restaurant) %></h2>
   <p><%= restaurant.address %></p>
   <p><%= "*" * restaurant.rating %></p>
+  <%= link_to "Remove restaurant", restaurant_path(restaurant), method: :delete %>
 <% end %>
